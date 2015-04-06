@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <title>Navigation Bar</title>
 
-  <!-- what does normalize.css do? try commenting out the line to see the changes -->
+  <!-- what does normalize.css do? try commenting out the line to see the changes
+
+    Removes styling
+
+   -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <style type="text/css">
 
@@ -42,66 +46,80 @@
 
     .red {
       /* use a hex value */
+      color: #BB0000;
 
     }
 
     .green {
       /* use a hex value */
+      color: #00BB00;
+
     }
 
     .mostly-black {
       /* use an rgb value */
+      color: rgba( 10,10,10,255);
     }
 
     .transparent-black {
       /* add an alpha component to your color to make the text half transparent */
+      color: rgba(0,0,0,0.5);
     }
 
     .serif {
       /* set the font family to some serif font (look it up if you have to), and
       include a fallback in case the font is unavailable */
+      font-family: serif, "san serif";
     }
 
     .bold {
-
+      font-weight: 700;
     }
 
     .small-text {
       /* use a pixel font size */
+      font-size: 12px;
     }
 
     .relatively-small-text {
       /* use a relative value (em) to make the text half as large */
+      font-size-adjust: 0.5;
     }
 
     .relatively-big-text {
       /* use a relative value (em) to make the text twice as large */
+      font-size-adjust: 2.0;
     }
 
-    /* what is the difference between a relative value and a pixel value? */
+    /* what is the difference between a relative value and a pixel value? 
+
+      Pixel is exact, while relative is a percentage of the parent size
+
+    */
 
     .double-line-height {
-
+      line-height: 200%;
     }
 
     .align-right {
+      text-align: right;
 
     }
 
     .underline {
-    
+      text-decoration: underline;
     }
 
     .strikethrough {
-      
+      text-decoration: line-through
     }
 
     .capitalize {
-
+      text-transform: capitalize;
     }
 
     .uppercase {
-
+      text-transform: uppercase;
     }
 
   </style>
